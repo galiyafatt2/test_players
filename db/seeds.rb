@@ -12,9 +12,9 @@ player5 = Player.create(name: "Player 5", team: team2)
 player6 = Player.create(name: "Player 6", team: team2)
 
 # Создаем матчи
-match1 = Match.create(date: Date.today)
-match2 = Match.create(date: Date.today - 1)
-match3 = Match.create(date: Date.today - 2)
+match1 = Play.create(date: Date.today)
+match2 = Play.create(date: Date.today - 1)
+match3 = Play.create(date: Date.today - 2)
 
 # Создание показателей
 metric1 = Metric.create(name: "Distance covered")
@@ -30,10 +30,10 @@ match2.metrics << metric2
 match3.metrics << metric1
 
 # Привязываем команды к матчам через связующую таблицу
-team1.matches << match1
-team1.matches << match2
-team2.matches << match1
-team2.matches << match3
+team1.plays << match1
+team1.plays << match2
+team2.plays << match1
+team2.plays << match3
 
 # Привязка показателей к игрокам
 player1.metrics << metric1
