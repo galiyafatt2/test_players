@@ -1,24 +1,10 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Это тестовый проект перед собеседованием
 
-Things you may want to cover:
+В рамках проекта реализовано 4 модели: Player, Team, Metric, Play
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+1. Клонировать проект
+2. Запустить bundle install
+3. rails db:create db:migrate db:seed
+4. Для тестов запустить bundle exec rspec
